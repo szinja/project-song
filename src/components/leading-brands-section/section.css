@@ -1,0 +1,49 @@
+section h1 {
+  color: #242424;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 67px;
+  margin-bottom: 50px;
+}
+
+.brand-con {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.brand-img-con {
+  width: 150px;
+  height: 80px;
+  position: relative;
+}
+
+.brand-img-con img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 700px) {
+  .brand-con {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 100px;
+    row-gap: 80px;
+  }
+  .brand-img-con {
+    width: 150px;
+    height: 80px;
+    position: relative;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .brand-con {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+}

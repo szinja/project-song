@@ -1,0 +1,66 @@
+section {
+  padding: 10px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+section h1 {
+  color: #242424;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 67px;
+}
+
+.cards-con {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 30px;
+}
+
+.icon {
+  height: 64px;
+  width: 64px;
+}
+.card h4 {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.card p {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@media screen and (min-width: 700px) {
+  section {
+    padding: 80px;
+  }
+  .card {
+   
+    gap: 50px;
+    max-width: 280px;
+    height: 422px;
+  }
+
+  .cards-con {
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 50px 0;
+  }
+}
