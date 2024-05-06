@@ -1,4 +1,5 @@
 import "./App.css";
+import CaseStudies from "./components/case-studies/CaseStudies";
 import ContactSection from "./components/contact/ContactSection";
 import Hero from "./components/hero-section/Hero";
 import LeadingBrandsSection from "./components/leading-brands-section/LeadingBrandsSection";
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <WhatWeDoSection />
+      <CaseStudies />
       <LeadingBrandsSection />
       <ContactSection />
     </>

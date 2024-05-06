@@ -1,7 +1,7 @@
 import React from "react";
 import olympian from "../../assets/brands/olympian.jpeg";
 import dragon from "../../assets/brands/dragon.jpeg";
-import skhokho from "../../assets/brands/skhokho";
+import skhokho from "../../assets/brands/skhokho.jpeg";
 
 import "./section.css"
 const CaseStudies = () => {
