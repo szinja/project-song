@@ -5,6 +5,7 @@ import Hero from "./components/hero-section/Hero";
 import LeadingBrandsSection from "./components/leading-brands-section/LeadingBrandsSection";
 import Navbar from "./components/navbar/Navbar";
 import WhatWeDoSection from "./components/what-we-do-section/WhatWeDoSection";
+import Form from "./components/form/Form";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <CaseStudies />
       <LeadingBrandsSection />
       <ContactSection />
+      <Form />
     </>
   );
 }

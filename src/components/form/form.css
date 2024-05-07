@@ -1,0 +1,101 @@
+.form-container {
+  padding: 20px;
+}
+
+.line {
+  height: 2px;
+  background-color: #333;
+  width: 332px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.form-field .dropdown {
+  position: relative;
+}
+
+.form-field .dropdown select {
+  padding-left: 30px;
+}
+
+.form-field p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.success {
+  color: #70259b;
+}
+.form-field input[type="radio"] {
+  display: none;
+}
+
+.form-field input[type="radio"] + label {
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.form-field input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.form-field input[type="radio"]:checked + label:before {
+  background-color: #70259b;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancel-btn {
+  color: red;
+  background: none;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+.submit-btn {
+  background-color: #70259b;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
