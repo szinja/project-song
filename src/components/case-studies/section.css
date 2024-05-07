@@ -1,51 +1,73 @@
-section h1 {
-  color: #242424;
-  font-family: Inter;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 67px;
-  margin-bottom: 50px;
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.caseStudy-con {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
-}
-.caseStudy-img-con {
-  width: 399px;
-  height: 399px;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-shrink: 0;
+.image-container {
+  position: relative;
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  text-align: center;
 }
 
-.caseStudy-img-con img {
-  position: absolute;
-  top: 0;
-  left: 0;
+.image-container img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
-@media screen and (min-width: 700px) {
-  .caseStudy-con {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 35%;
-    row-gap: 80px;
-  }
-  .caseStudy-img-con {
-    width: 300px;
-    height: 300px;
-    position: relative;
-  }
+.text-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  text-align: left;
 }
-@media screen and (min-width: 1000px) {
-  .caseStudy-con {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 35%;
+
+.text-overlay h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.text-overlay p {
+  margin-bottom: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.text-overlay h2::before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 40px;
+  height: 4px;
+  background-color: #D100C9;
+}
+
+@media only screen and (max-width: 600px) {
+  .image-container {
+      width: calc(50% - 20px);
+  }
+  
+  .text-overlay {
+      bottom: 5px;
+      left: 5px;
+  }
+
+  .text-overlay h2 {
+      font-size: 4vw;
+      max-width: calc(100% - 20px);
+  }
+
+  .text-overlay p {
+      font-size: 2.5vw;
+      max-width: calc(100% - 20px);
   }
 }
